@@ -8,5 +8,5 @@ subjects:
     namespace: webserver-operator-system
 roleRef:
   kind: ClusterRole
-  name: manager-role
+  name: system:kube-controller-manager
   apiGroup: rbac.authorization.k8s.io
