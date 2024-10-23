@@ -25,3 +25,28 @@ rules:
   - webservers/status
   verbs:
   - get
+- apiGroups:
+    - apps
+  resources:
+    - deployments
+  verbs:
+    - create
+    - delete
+    - get
+    - list
+    - patch
+    - update
+    - watch
+- apiGroups:
+    - apps
+    - ""
+  resources:
+    - services
+  verbs:
+    - create
+    - delete
+    - get
+    - list
+    - patch
+    - update
+    - watch
